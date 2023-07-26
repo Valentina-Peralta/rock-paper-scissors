@@ -1,0 +1,35 @@
+.board {
+    padding: 2rem;
+}
+
+.board div {
+    background-color: white;
+    width: 10rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 10;
+}
+
+.triangle {
+    position: relative;
+    top: 0;
+}
+
+.rock {
+    border: 1rem solid hsl(349, 71%, 52%);
+    transform: translateX(50%) translateY(100%)
+}
+
+.paper {
+    border: 1rem solid hsl(230, 89%, 62%);
+    transform: translateX(-30%) translateY(-30%)
+}
+
+.scissors {
+    border: 1rem solid hsl(39, 89%, 49%);
+    transform: translateX(130%)translateY(-30%)
+}
