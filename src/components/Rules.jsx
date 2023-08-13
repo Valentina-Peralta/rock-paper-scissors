@@ -2,8 +2,9 @@ import React from 'react'
 
 const Rules = () => {
     return (
-        <div>Rules</div>
-    )
+        <div className="rules">
+
+        </div>)
 }
 
 export default Rules
