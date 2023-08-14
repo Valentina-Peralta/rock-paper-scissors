@@ -1,0 +1,39 @@
+.modal {
+    z-index: 1000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    backdrop-filter: blur(30px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+}
+
+.rules {
+    min-width: 400px;
+    background-color: white;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+
+}
+
+p {
+    color: hsl(217, 16%, 45%);
+    width: 100%;
+    padding: 0 3rem;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.close {
+    cursor: pointer;
+}

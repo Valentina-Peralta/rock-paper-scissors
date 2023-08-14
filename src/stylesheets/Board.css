@@ -69,7 +69,7 @@ h3 {
  */
 }
 
-.board .scissors {
+.board .rock {
     transform: translateY(150%);
     /*     transform: translateX(130%)translateY(-30%)
  */
