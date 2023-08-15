@@ -1,5 +1,5 @@
 import '../stylesheets/Nav.css'
-const Header = () => {
+const Header = ({ score }) => {
     return (
         <header>
             <h1>
@@ -9,7 +9,7 @@ const Header = () => {
             </h1>
             <div className="score">
                 <h3>SCORE</h3>
-                <p>12</p>
+                <p>{score}</p>
             </div>
         </header>)
 }

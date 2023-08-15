@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import '../stylesheets/Board.css'
 
-const Board = () => {
+const Board = ({ setScore }) => {
     const options = ['rock', 'paper', 'scissors'];
     const [user, setUser] = useState('')
     const [computer, setComputer] = useState('')
@@ -9,7 +9,6 @@ const Board = () => {
     const [userCounter, setUserCounter] = useState(0)
     const [computerCounter, setComputerCounter] = useState(0)
     const [result, setResult] = useState('')
-    const [score, setScore] = useState(0)
 
     const reset = () => {
         setUser('')
@@ -57,7 +56,7 @@ const Board = () => {
             if (counter >= 3) {
                 if (userCounter > computerCounter) {
                     setResult('YOU WIN');
-                    setScore(prevScore => prevScore + 1)
+                    setScore()
                 }
                 else { setResult('YOU LOSE') }
             } else {
